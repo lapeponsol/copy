@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" value="14m9pPUxrVxDduY7HBgz937KwyPEkawJCeocydJtktH9" id="myInput">
+<button onclick="myFunction()">COPY TEXT</button>
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+</script>
+</body>
+</html>
+
+
+<footer>
+
+  </footer>
+ </html>
