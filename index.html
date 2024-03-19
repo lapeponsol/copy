@@ -1,64 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Product Landing Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Abel|Raleway|Satisfy" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="stylesheet.css">
-</head>
-
-
-<header id="header">
-  <img src="https://i.postimg.cc/50wmT7qL/LMblack.png" width="70px;" id="header-img" alt="Lovely-Mugs-Logo">
-  
-  <nav id="nav-bar">
-    <a class="nav-link" href="#video">How It Works</a>
-    <a class="nav-link" href="#pricing">Pricing</a> 
-    <a class="nav-link" href="#get-started">Get Started</a>
-  </nav> 
-</header>
-  
 <body>
- <main>
+<input type="text" value="14m9pPUxrVxDduY7HBgz937KwyPEkawJCeocydJtktH9" id="myInput">
+<button onclick="myFunction()">COPY TEXT</button>
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+</script>
+</body>
+</html>
 
-  <h1 id="lovely">Lovely Mugs</h1>
-  <p>Here at Lovely Mugs we create beautiful personalised mugs, with paint, beads, and stylish embellishments. They are the perfect gift for anyone, especially those who love their coffee. Would you like to know how to create a simple painted mug?</p>
-  <h2>Watch the video below to see how a personalised mug is created.</h2>
-  <div id="vid-div"><iframe id="video" src="https://www.youtube.com/embed/hXU5WUdrcMw"></iframe></div>
-  <br>
-  <h2 id="pricing">Pricing</h2>
-  <p>We sell personalised mugs and also mug kits which you can use to create your own special mug. Check out our prices below.</p>
-  
-  <div id="box-container">
-    <div id="box1"><h2>Mug Kit 1</h2> <h3>$10</h3> <p>Lorem ipsum dolor. Lorem ipsum. Lorem.</p><button>SELECT</button></div>
-    
-    <div id="box2"><h2>Mug Kit 2</h2> <h3>$20</h3> <p>Lorem ipsum dolor. Lorem ipsum. Lorem.</p><button>SELECT</button></div>
-    <div id="box3"><h2>Mug Kit 3</h2> <h3>$30</h3> <p>Lorem ipsum dolor. Lorem ipsum. Lorem.</p><button>SELECT</button></div>
-    <div id="box4"><h2>Mug Kit 4</h2> <h3>$40</h3> <p>Lorem ipsum dolor. Lorem ipsum. Lorem.</p><button>SELECT</button></div>
-  </div>
-  
-  
-  <br>
-<form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-  <h2 id="get-started">Get started</h2><p>Would you like to paint a mug with us? Please submit your email and we will contact you to get you started today.</p><br>
-  <input id="email" type="email" placeholder="Enter your email" name="email" required>
-
-  <p><input id="submit" type="submit" value="Submit"><p>
-  
-  </form>
-  </body>
-  </main>
-<footer>
- <p>Product Landing Page by <a id="miriafooter" href="#" style="text-decoration: none">Miria</a>&copy; <span id="date"></span> <script>var d = new Date();
-      document.getElementById("date").innerHTML = d.getFullYear();</script>
-  </p>
-  
-  
-  <div> <a id="footericons" href="https://github.com/Miria19" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a><a id="footericons" href="https://twitter.com/MiriaSpirovski" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-   <a id="footericons" href="https://www.freecodecamp.org/miria" target="_blank"> <i class="fa fa-free-code-camp w3-hover-opacity"></i></a>
-  </div>
-  
-  </footer>
- </html>
